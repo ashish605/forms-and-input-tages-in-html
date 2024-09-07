@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        .heading {
+            display: flex;
+            justify-content: center;
+            border: 2px dotted;
+            padding: 40px;
+            width: 95vw;
+            margin-top: 50px;
+
+        }
+
+        :root {
+            --pad: 20px;
+        }
+
+        .main {
+            margin-top: 50px;
+        }
+
+        .name {
+            padding: var(--pad);
+        }
+
+        .gender {
+            padding: var(--pad);
+        }
+
+
+
+        .terms {
+            padding: var(--pad);
+        }
+
+        .exprience {
+            padding: var(--pad);
+        }
+
+        .games {
+            padding: var(--pad);
+        }
+
+        .password {
+            padding: var(--pad);
+        }
+
+        .submit{
+            display: flex;
+            justify-content: center;
+        }
+
+        input::placeholder
+        {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Hello World</h1>
+    <div class="main">
+        <div class="name">
+            <label for="username">1.Enter name :</label>
+            <input type="text" id="username" name="username" placeholder="enter your name">
+        </div>
+        <div class="password">
+            <label for="password">2.Enter your password :</label>
+            <input type="password" id="password" name="password" placeholder="enter the password">
+        </div>
+        <div class="gender"><label for="male female others">2.Enter your gender :</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="others" name="gender" value="others">
+            <label for="others">Others</label>
+        </div>
+        <div class="terms">
+            <label for="accpect">3.I accpect terms </label>
+            <input type="checkbox" id="accpect" name="accpect" value="yes">
+
+        </div>
+        <div class="games">
+            <label for="games">games :</label>
+            <select name="games" id="games">
+                <option value="hockey">hockey</option>
+                <option value="cricket">cricket</option>
+                <option value="chess">chess</option>
+            </select>
+        </div>
+       
+    </div>
+    <div class="exprience">
+        <label for="comments">4.Enter your work exprince :</label>
+        <br>
+        <textarea id="comments" name="comments" rows="5" cols="100"></textarea>
+    </div>
+
+    <div class="submit"><button>submit</button> </div>
+    <hr>
+
+</body>
+
+</html>
